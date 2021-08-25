@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">ND940C3-Project</string>
+    <string name="app_description">Download files from Internet</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="notification_title">Udacity: Android Kotlin Nanodegree </string>
+    <string name="notification_description">The Project 3 repository is downloaded</string>
+    <string name="notification_button">See changes</string>
+
+    <string name="button_name">Click me</string>
+    <string name="button_loading">We are loading </string>
+    <string name="title_activity_detail">DetailActivity</string>
+
+    <!-- Glide -->
+    <string name="glide_info">Glide (by Bumptech) is a fast and efficient open source media management and image loading framework</string>
+    <string name="glide_url">https://github.com/bumptech/glide/archive/refs/heads/master.zip</string>
+
+    <!--Load App -->
+    <string name="loadapp_info">LoadApp (by Udacity) is the current repository</string>
+    <string name="loadapp_url">https://github.com/udacity/nd940-c3-advanced-android-programming-project-starter/archive/refs/heads/master.zip</string>
+
+    <!-- Retrofit -->
+    <string name="retrofit_info">Retrofit (by Square, Inc) is a type-safe HTTP client for Android and Java</string>
+    <string name="retrofit_url">https://github.com/square/retrofit/archive/refs/heads/master.zip</string>
+    <string name="desc_image_of_a_cloud_with_a_down_arrow">Image of a cloud with a down arrow</string>
+
+
+</resources>

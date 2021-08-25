@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoadingButton">
+        <attr name="loadingColor" format="color"/>
+        <attr name="completeColor" format="color"/>
+        <attr name="circleColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="RadioButton">
+        <attr name="downloadUrl" format="string"/>
+    </declare-styleable>
+</resources>
