@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@id/filename_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/filename_label" />
+        <Constraint
+            android:id="@id/status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/status_label" />
+        <Constraint
+            android:id="@id/cloud_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@id/filename_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="1.0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/filename_label" />
+        <Constraint
+            android:id="@id/status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="1.0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/status_label" />
+        <Constraint
+            android:id="@id/cloud_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="1.0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+
+    <Transition
+        android:id="@+id/success_transaction"
+        app:autoTransition="animateToEnd"
+        app:constraintSetEnd="@id/end"
+        app:constraintSetStart="@id/start"
+        app:duration="2000">
+        <!--<KeyFrameSet>
+            <KeyAttribute
+                app:framePosition="0"
+                app:motionTarget="@id/status_text">
+                <CustomAttribute
+                    app:attributeName="textColor"
+                    app:customColorValue="@color/colorStart" />
+            </KeyAttribute>
+            <KeyAttribute
+                app:framePosition="100"
+                app:motionTarget="@id/status_text">
+                <CustomAttribute
+                    app:attributeName="textColor"
+                    app:customColorValue="@color/colorSuccess" />
+            </KeyAttribute>
+            <KeyAttribute
+                app:framePosition="0"
+                app:motionTarget="@id/cloud_status">
+                <CustomAttribute
+                    app:attributeName="textColor"
+                    app:customColorValue="@color/colorStart" />
+            </KeyAttribute>
+            <KeyAttribute
+                app:framePosition="100"
+                app:motionTarget="@id/cloud_status">
+                <CustomAttribute
+                    app:attributeName="colorFilter"
+                    app:customColorValue="@color/colorSuccess" />
+            </KeyAttribute>
+        </KeyFrameSet>-->
+    </Transition>
+</MotionScene>
